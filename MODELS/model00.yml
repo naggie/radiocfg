@@ -1,19 +1,6 @@
-semver: 2.10.0
+semver: 2.10.2
 header: 
-   name: "POCKET"
-timers: 
-   0:
-      start: 0
-      swtch: "NONE"
-      value: 4185
-      mode: OFF
-      countdownBeep: 0
-      minuteBeep: 0
-      persistent: 0
-      countdownStart: 0
-      showElapsed: 0
-      extraHaptic: 0
-      name: ""
+   name: "METEOR75PR"
 telemetryProtocol: 0
 thrTrim: 0
 noGlobalFunctions: 0
@@ -28,6 +15,7 @@ throttleReversed: 0
 enableCustomThrottleWarning: 0
 disableTelemetryWarning: 0
 showInstanceIds: 0
+checklistInteractive: 0
 customThrottleWarningPosition: 0
 beepANACenter: 48
 mixData: 
@@ -38,6 +26,7 @@ mixData:
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
+   speedPrec: 0
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -53,6 +42,7 @@ mixData:
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
+   speedPrec: 0
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -68,6 +58,7 @@ mixData:
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
+   speedPrec: 0
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -83,6 +74,7 @@ mixData:
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
+   speedPrec: 0
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -98,6 +90,7 @@ mixData:
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
+   speedPrec: 0
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -113,6 +106,7 @@ mixData:
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
+   speedPrec: 0
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -128,6 +122,7 @@ mixData:
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
+   speedPrec: 0
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -143,6 +138,7 @@ mixData:
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
+   speedPrec: 0
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -158,6 +154,7 @@ mixData:
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
+   speedPrec: 0
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -173,6 +170,7 @@ mixData:
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
+   speedPrec: 0
    offset: 0
    swtch: "NONE"
    flightModes: 000000000
@@ -266,6 +264,20 @@ expoData:
    curve: 
       type: 1
       value: 0
+ -
+   mode: 3
+   scale: 0
+   trimSource: 0
+   srcRaw: P1
+   chn: 4
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+   curve: 
+      type: 1
+      value: 0
 curves: 
    31:
       type: 1
@@ -281,8 +293,75 @@ points:
       val: -1
    160:
       val: 1
+customFn: 
+   0:
+      swtch: "SA2"
+      func: PLAY_TRACK
+      def: "armed,1,!1x"
+   1:
+      swtch: "SA0"
+      func: PLAY_TRACK
+      def: "disarm,1,!1x"
+   2:
+      swtch: "SB0"
+      func: PLAY_TRACK
+      def: "acrmod,1,1x"
+   3:
+      swtch: "SB1"
+      func: PLAY_TRACK
+      def: "airmod,1,1x"
+   4:
+      swtch: "SB2"
+      func: PLAY_TRACK
+      def: "angmod,1,1x"
+   5:
+      swtch: "SD2"
+      func: PLAY_TRACK
+      def: ",0,1x"
+flightModeData: 
+   0:
+      trim: 
+         0:
+            value: 0
+            mode: 31
+         1:
+            value: 0
+            mode: 31
+         2:
+            value: 0
+            mode: 31
+         3:
+            value: 0
+            mode: 31
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
 thrTraceSrc: Thr
-switchWarningState: AuBuCuDu
+switchWarning: 
+   SB:
+      pos: up
+   SC:
+      pos: up
 rssiSource: none
 rfAlarms: 
    warning: 45
@@ -292,20 +371,14 @@ potsWarnMode: WARN_OFF
 jitterFilter: OFF
 moduleData: 
    0:
-      type: TYPE_MULTIMODULE
-      subType: 86,0
+      type: TYPE_CROSSFIRE
+      subType: 0
       channelsStart: 0
       channelsCount: 16
       failsafeMode: NOT_SET
       mod: 
-         multi: 
-            disableTelemetry: 0
-            disableMapping: 0
-            autoBindMode: 0
-            lowPowerMode: 0
-            receiverTelemetryOff: 0
-            receiverHigherChannels: 0
-            optionValue: 0
+         crsf: 
+            telemetryBaudrate: 0
 trainerData: 
    mode: SLAVE
    channelsStart: 0
@@ -576,7 +649,7 @@ telemetrySensors:
          id: 8
       id2: 
          instance: 3
-      label: "Bat%"
+      label: "Bat"
       subId: 0
       type: TYPE_CUSTOM
       unit: 13
@@ -590,6 +663,80 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
+   14:
+      id1: 
+         id: 30
+      id2: 
+         instance: 0
+      label: "Ptch"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 21
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   15:
+      id1: 
+         id: 30
+      id2: 
+         instance: 1
+      label: "Roll"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 21
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   16:
+      id1: 
+         id: 30
+      id2: 
+         instance: 2
+      label: "Yaw"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 21
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   17:
+      id1: 
+         id: 33
+      id2: 
+         instance: 0
+      label: "FM"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 42
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         param: 0
 screens: 
    0:
       type: VALUES
