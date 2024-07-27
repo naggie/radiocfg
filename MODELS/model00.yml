@@ -350,6 +350,10 @@ customFn:
       swtch: "SD2"
       func: PLAY_TRACK
       def: ",0,1x"
+   6:
+      swtch: "SC2"
+      func: PLAY_TRACK
+      def: "buzact,1,!1x"
 flightModeData: 
    0:
       trim: 
