@@ -1,4 +1,4 @@
-checksum: 58601
+checksum: 25944
 manuallyEdited: 0
 timezoneMinutes: 0
 ppmunit: 0
@@ -76,11 +76,11 @@ hapticStrength: 2
 gpsFormat: 0
 audioMuteEnable: 0
 speakerPitch: 0
-speakerVolume: 22
+speakerVolume: 5
 vBatMin: 66
 vBatMax: 84
-backlightBright: 0
-globalTimer: 71413
+backlightBright: 94
+globalTimer: 72150
 bluetoothBaudrate: 0
 bluetoothMode: OFF
 countryCode: 0
@@ -92,8 +92,8 @@ disableRssiPoweroffAlarm: 0
 USBMode: 0
 jackMode: 0
 ttsLanguage: "en"
-beepVolume: 3
-wavVolume: 4
+beepVolume: 0
+wavVolume: 3
 varioVolume: 2
 backgroundVolume: 3
 varioPitch: 0
@@ -126,7 +126,7 @@ switchConfig:
       name: ""
 backlightColor: 0
 bluetoothName: "73742Q-\x80"
-ownerRegistrationID: "POCKET"
+ownerRegistrationID: "POcKET"
 rotEncMode: 0
 uartSampleMode: 0
 radioGFDisabled: 0
