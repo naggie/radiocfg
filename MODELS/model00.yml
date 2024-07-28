@@ -791,6 +791,11 @@ screens:
       u: 
          lines: 
             0:
+               sources: 
+                  0:
+                     val: tele(-10)
+                  1:
+                     val: tele(2)
             1:
                sources: 
                   0:
