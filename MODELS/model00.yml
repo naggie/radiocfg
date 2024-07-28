@@ -377,6 +377,14 @@ customFn:
       swtch: "L1"
       func: PLAY_TRACK
       def: "lowbat,1,!1x"
+   11:
+      swtch: "SC1"
+      func: PLAY_TRACK
+      def: "turtle,1,!1x"
+   12:
+      swtch: "SD0"
+      func: PLAY_TRACK
+      def: "vtx200,1,!1x"
 flightModeData: 
    0:
       trim: 
@@ -813,6 +821,11 @@ screens:
                      val: TX_VOLTAGE
                   1:
                      val: TX_TIME
+   1:
+      type: SCRIPT
+      u: 
+         script: 
+            file: "tele"
 view: 0
 modelRegistrationID: "*\x15*\x15!\x03%\x07"
 usbJoystickExtMode: 0
