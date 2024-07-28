@@ -349,11 +349,23 @@ customFn:
    5:
       swtch: "SD2"
       func: PLAY_TRACK
-      def: ",0,1x"
+      def: "pitmod,1,1x"
    6:
       swtch: "SC2"
       func: PLAY_TRACK
       def: "buzact,1,!1x"
+   7:
+      swtch: "SE2"
+      func: OVERRIDE_CHANNEL
+      def: "5,150,1"
+   8:
+      swtch: "SE2"
+      func: OVERRIDE_CHANNEL
+      def: "2,40,1"
+   9:
+      swtch: "SE2"
+      func: PLAY_TRACK
+      def: "panic,1,1x"
 flightModeData: 
    0:
       trim: 
