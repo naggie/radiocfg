@@ -328,9 +328,9 @@ points:
 logicalSw: 
    0:
       func: FUNC_VNEG
-      def: "tele(-10),32"
+      def: "tele(10),32"
       andsw: "SA2"
-      delay: 5
+      delay: 7
       duration: 0
 customFn: 
    0:
@@ -821,6 +821,10 @@ screens:
                      val: TX_VOLTAGE
                   1:
                      val: TX_TIME
+            2:
+               sources: 
+                  0:
+                     val: tele(10)
    1:
       type: SCRIPT
       u: 
