@@ -36,6 +36,22 @@ mixData:
    speedDown: 0
    name: ""
  -
+   weight: 25
+   destCh: 0
+   srcRaw: P1
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: MUL
+   speedPrec: 0
+   offset: 75
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
    weight: 100
    destCh: 1
    srcRaw: I1
@@ -44,6 +60,22 @@ mixData:
    mltpx: ADD
    speedPrec: 0
    offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 25
+   destCh: 1
+   srcRaw: P1
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: MUL
+   speedPrec: 0
+   offset: 75
    swtch: "NONE"
    flightModes: 000000000
    delayUp: 0
@@ -108,6 +140,22 @@ mixData:
    mltpx: ADD
    speedPrec: 0
    offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 25
+   destCh: 3
+   srcRaw: P1
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: MUL
+   speedPrec: 0
+   offset: 75
    swtch: "NONE"
    flightModes: 000000000
    delayUp: 0
@@ -199,6 +247,22 @@ mixData:
    weight: 100
    destCh: 9
    srcRaw: P1
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   speedPrec: 0
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 10
+   srcRaw: MIN
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
@@ -385,6 +449,10 @@ customFn:
       swtch: "SD0"
       func: PLAY_TRACK
       def: "vtx200,1,!1x"
+   13:
+      swtch: "SC0"
+      func: PLAY_TRACK
+      def: "fm-1,1,!1x"
 flightModeData: 
    0:
       trim: 
@@ -825,11 +893,12 @@ screens:
                sources: 
                   0:
                      val: tele(10)
-   1:
-      type: SCRIPT
-      u: 
-         script: 
-            file: "tele"
+                  1:
+                     val: TX_GPS
+            3:
+               sources: 
+                  0:
+                     val: tele(6)
 view: 0
 modelRegistrationID: "*\x15*\x15!\x03%\x07"
 usbJoystickExtMode: 0
