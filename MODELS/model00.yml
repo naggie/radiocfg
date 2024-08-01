@@ -367,7 +367,7 @@ expoData:
     curve:
       type: 1
       value: 0
-    trimSource: 0
+    trimSource: 1
     name: ""
   - srcRaw: Ele
     scale: 0
@@ -380,7 +380,7 @@ expoData:
     curve:
       type: 1
       value: 0
-    trimSource: 0
+    trimSource: 1
     name: ""
   - srcRaw: Thr
     scale: 0
@@ -393,7 +393,7 @@ expoData:
     curve:
       type: 1
       value: 0
-    trimSource: 0
+    trimSource: 1
     name: ""
   - srcRaw: Ail
     scale: 0
@@ -406,7 +406,7 @@ expoData:
     curve:
       type: 1
       value: 0
-    trimSource: 0
+    trimSource: 1
     name: ""
   - srcRaw: P1
     scale: 0
