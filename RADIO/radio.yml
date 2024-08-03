@@ -1,156 +1,133 @@
-checksum:  19618
+checksum: 14140
+manuallyEdited: 0
+timezoneMinutes: 0
+ppmunit: 0
 semver: 2.10.2
 board: pocket
-calib:
-  LH:
-    mid: 1053
-    spanNeg: 779
-    spanPos: 844
-  LV:
-    mid: 1031
-    spanNeg: 864
-    spanPos: 843
-  RV:
-    mid: 1023
-    spanNeg: 751
-    spanPos: 723
-  RH:
-    mid: 1032
-    spanNeg: 813
-    spanPos: 788
-  P1:
-    mid: 1092
-    spanNeg: 466
-    spanPos: 467
-currModelFilename: model00.yml
+calib: 
+   LH:
+      mid: 1053
+      spanNeg: 779
+      spanPos: 844
+   LV:
+      mid: 1031
+      spanNeg: 864
+      spanPos: 843
+   RV:
+      mid: 1023
+      spanNeg: 751
+      spanPos: 723
+   RH:
+      mid: 1032
+      spanNeg: 813
+      spanPos: 788
+   P1:
+      mid: 1092
+      spanNeg: 466
+      spanPos: 467
+currModel: 0
+contrast: 20
 vBatWarn: 68
 txVoltageCalibration: -7
-vBatMin: 66
-vBatMax: 84
-backlightColor: 0
-contrast: 20
-currModel: 0
 backlightMode: backlight_mode_all
-trainer:
-  calib:
-    0:
-      val: 0
-    1:
-      val: 0
-    2:
-      val: 0
-    3:
-      val: 0
-  mix:
-    0:
-      srcChn: 3
-      mode: REPL
-      studWeight: 100
-    1:
-      srcChn: 1
-      mode: REPL
-      studWeight: 100
-    2:
-      srcChn: 2
-      mode: REPL
-      studWeight: 100
-    3:
-      srcChn: 0
-      mode: REPL
-      studWeight: 100
-PPM_Multiplier: 0
+antennaMode: MODE_PER_MODEL
+disableRtcWarning: 1
+keysBacklight: 0
+dontPlayHello: 0
+internalModule: TYPE_CROSSFIRE
+trainer: 
+   mix: 
+      0:
+         srcChn: 3
+         mode: REPL
+         studWeight: 100
+      1:
+         srcChn: 1
+         mode: REPL
+         studWeight: 100
+      2:
+         srcChn: 2
+         mode: REPL
+         studWeight: 100
+      3:
+         srcChn: 0
+         mode: REPL
+         studWeight: 100
 view: 2
 fai: 0
-disableMemoryWarning: 0
 beepMode: mode_all
 alarmsFlash: 0
+disableMemoryWarning: 0
 disableAlarmWarning: 0
-disableRssiPoweroffAlarm: 0
-USBMode: 0
-hatsMode: SWITCHABLE
-stickDeadZone: 0
-jackMode: 0
-hapticMode: mode_nokeys
 stickMode: 1
 timezone: 0
-timezoneMinutes: 0
 adjustRTC: 0
 inactivityTimer: 250
 internalModuleBaudrate: 4
-internalModule: TYPE_CROSSFIRE
 splashMode: 2
+hapticMode: mode_nokeys
+switchesDelay: 0
 lightAutoOff: 12
 templateSetup: 21
+PPM_Multiplier: 0
 hapticLength: 2
-speakerPitch: 0
-hapticStrength: 2
 beepLength: 2
+hapticStrength: 2
 gpsFormat: 0
+audioMuteEnable: 0
+speakerPitch: 0
 speakerVolume: 10
+vBatMin: 66
+vBatMax: 84
 backlightBright: 94
-blOffBright: 0
-switchesDelay: 0
-globalTimer: 113012
-bluetoothName: "73742Q-\x80"
+globalTimer: 122916
 bluetoothBaudrate: 0
 bluetoothMode: OFF
 countryCode: 0
+pwrOnSpeed: 1
+pwrOffSpeed: 1
 noJitterFilter: 1
-disableRtcWarning: 1
-audioMuteEnable: 0
-keysBacklight: 0
-rotEncMode: 0
 imperial: 0
-ppmunit: 0
-ttsLanguage: en
+disableRssiPoweroffAlarm: 0
+USBMode: 0
+jackMode: 0
+ttsLanguage: "en"
 beepVolume: 0
 wavVolume: 3
 varioVolume: 2
+backgroundVolume: 3
 varioPitch: 0
 varioRange: 0
 varioRepeat: 0
-backgroundVolume: 3
-dontPlayHello: 0
-serialPort:
-  VCP:
-    mode: CLI
-    power: 0
-antennaMode: MODE_PER_MODEL
-pwrOnSpeed: 1
-pwrOffSpeed: 1
-sticksConfig:
-  0:
-    name: ""
-  1:
-    name: ""
-  2:
-    name: ""
-  3:
-    name: ""
-potsConfig:
-  P1:
-    name: ""
-    type: without_detent
-    inv: 0
-switchConfig:
-  SA:
-    type: toggle
-    name: ""
-  SB:
-    type: 3pos
-    name: ""
-  SC:
-    type: 3pos
-    name: ""
-  SD:
-    type: toggle
-    name: ""
-  SE:
-    type: 2pos
-    name: ""
-ownerRegistrationID: naggie
-imuMax: 0
-imuOffset: 0
+serialPort: 
+   VCP:
+      mode: CLI
+      power: 0
+potsConfig: 
+   P1:
+      type: without_detent
+      inv: 0
+      name: ""
+switchConfig: 
+   SA:
+      type: toggle
+      name: ""
+   SB:
+      type: 3pos
+      name: ""
+   SC:
+      type: 3pos
+      name: ""
+   SD:
+      type: toggle
+      name: ""
+   SE:
+      type: 2pos
+      name: ""
+backlightColor: 0
+bluetoothName: "73742Q-\x80"
+ownerRegistrationID: "naggie"
+rotEncMode: 0
 uartSampleMode: 0
 radioGFDisabled: 0
 radioTrainerDisabled: 0
