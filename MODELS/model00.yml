@@ -400,7 +400,7 @@ customFn:
    0:
       swtch: "SA2"
       func: PLAY_TRACK
-      def: "armed,1,1x"
+      def: "armed,1,!1x"
    1:
       swtch: "SA0"
       func: PLAY_TRACK
@@ -408,11 +408,11 @@ customFn:
    2:
       swtch: "SB0"
       func: PLAY_TRACK
-      def: "airmod,1,!1x"
+      def: "acrmod,1,!1x"
    3:
       swtch: "SB1"
       func: PLAY_TRACK
-      def: "acrmod,1,!1x"
+      def: "airmod,1,!1x"
    4:
       swtch: "SB2"
       func: PLAY_TRACK
@@ -448,11 +448,7 @@ customFn:
    12:
       swtch: "SD2"
       func: PLAY_TRACK
-      def: "launch,1,1x"
-   13:
-      swtch: "SD2"
-      func: PLAY_TRACK
-      def: ",0,1x"
+      def: "launch,1,!1x"
 flightModeData: 
    0:
       trim: 
