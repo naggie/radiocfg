@@ -9,6 +9,7 @@ ignoreSensorIds: 0
 trimInc: 0
 disableThrottleWarning: 0
 displayChecklist: 0
+manuallyEdited: 1
 extendedLimits: 1
 extendedTrims: 0
 throttleReversed: 0
@@ -444,7 +445,7 @@ customFn:
    11:
       swtch: "SC0"
       func: PLAY_TRACK
-      def: "fm-1,1,!1x"
+      def: "norms,1,!1x"
    12:
       swtch: "SD2"
       func: PLAY_TRACK
