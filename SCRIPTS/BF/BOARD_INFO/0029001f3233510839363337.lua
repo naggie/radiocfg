@@ -1,0 +1,16 @@
+return {
+    boardIdentifier = "S411",
+    hardwareRevision = 0,
+    boardType = 2,
+    targetCapabilities = 67,
+    targetName = "STM32F411",
+    boardName = "BETAFPVF411",
+    manufacturerId = "BEFH",
+    signature = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, },
+    mcuTypeId = 1,
+    configurationState = 128,
+    gyroSampleRateHz = 3200,
+    configurationProblems = 0,
+    spiRegisteredDeviceCount = 1,
+    i2cRegisteredDeviceCount = 0,
+}
