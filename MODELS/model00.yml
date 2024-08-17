@@ -44,7 +44,7 @@ mixData:
    mltpx: MUL
    speedPrec: 0
    offset: 75
-   swtch: "!SC2"
+   swtch: "SC0"
    flightModes: 000000000
    delayUp: 0
    delayDown: 0
@@ -76,7 +76,7 @@ mixData:
    mltpx: MUL
    speedPrec: 0
    offset: 75
-   swtch: "!SC2"
+   swtch: "SC0"
    flightModes: 000000000
    delayUp: 0
    delayDown: 0
