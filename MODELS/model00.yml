@@ -9,7 +9,6 @@ ignoreSensorIds: 0
 trimInc: 0
 disableThrottleWarning: 0
 displayChecklist: 0
-manuallyEdited: 1
 extendedLimits: 1
 extendedTrims: 0
 throttleReversed: 0
