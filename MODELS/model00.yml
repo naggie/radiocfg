@@ -436,7 +436,7 @@ customFn:
    9:
       swtch: "L1"
       func: PLAY_TRACK
-      def: "lowbat,1,!1x"
+      def: "lowlnd,1,!1x"
    10:
       swtch: "SC1"
       func: PLAY_TRACK
