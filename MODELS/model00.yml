@@ -36,22 +36,6 @@ mixData:
    speedDown: 0
    name: ""
  -
-   weight: 25
-   destCh: 0
-   srcRaw: P1
-   carryTrim: 0
-   mixWarn: 0
-   mltpx: MUL
-   speedPrec: 0
-   offset: 75
-   swtch: "SC0"
-   flightModes: 000000000
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: ""
- -
    weight: 100
    destCh: 1
    srcRaw: I1
@@ -61,22 +45,6 @@ mixData:
    speedPrec: 0
    offset: 0
    swtch: "NONE"
-   flightModes: 000000000
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: ""
- -
-   weight: 25
-   destCh: 1
-   srcRaw: P1
-   carryTrim: 0
-   mixWarn: 0
-   mltpx: MUL
-   speedPrec: 0
-   offset: 75
-   swtch: "SC0"
    flightModes: 000000000
    delayUp: 0
    delayDown: 0
@@ -100,38 +68,6 @@ mixData:
    speedDown: 0
    name: ""
  -
-   weight: 25
-   destCh: 2
-   srcRaw: P1
-   carryTrim: 0
-   mixWarn: 0
-   mltpx: MUL
-   speedPrec: 0
-   offset: 75
-   swtch: "SC0"
-   flightModes: 000000000
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: ""
- -
-   weight: 25
-   destCh: 2
-   srcRaw: P1
-   carryTrim: 0
-   mixWarn: 0
-   mltpx: ADD
-   speedPrec: 0
-   offset: -25
-   swtch: "SC0"
-   flightModes: 000000000
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: ""
- -
    weight: 100
    destCh: 3
    srcRaw: I0
@@ -141,22 +77,6 @@ mixData:
    speedPrec: 0
    offset: 0
    swtch: "NONE"
-   flightModes: 000000000
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: ""
- -
-   weight: 25
-   destCh: 3
-   srcRaw: P1
-   carryTrim: 0
-   mixWarn: 0
-   mltpx: MUL
-   speedPrec: 0
-   offset: 75
-   swtch: "SC0"
    flightModes: 000000000
    delayUp: 0
    delayDown: 0
