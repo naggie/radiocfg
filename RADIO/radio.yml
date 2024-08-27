@@ -1,5 +1,5 @@
-checksum: 46484
-manuallyEdited: 0
+checksum: 8520
+manuallyEdited: 1
 timezoneMinutes: 0
 ppmunit: 0
 semver: 2.10.2
@@ -53,7 +53,7 @@ trainer:
          srcChn: 0
          mode: REPL
          studWeight: 100
-view: 0
+view: 2
 fai: 0
 beepMode: mode_all
 alarmsFlash: 0
@@ -76,11 +76,11 @@ hapticStrength: 2
 gpsFormat: 0
 audioMuteEnable: 0
 speakerPitch: 0
-speakerVolume: 0
+speakerVolume: 8
 vBatMin: 66
 vBatMax: 84
 backlightBright: 94
-globalTimer: 161672
+globalTimer: 162687
 bluetoothBaudrate: 0
 bluetoothMode: OFF
 countryCode: 0
@@ -100,6 +100,58 @@ varioPitch: 0
 varioRange: 0
 varioRepeat: 0
 customFn: 
+   0:
+      swtch: "SA2"
+      func: PLAY_TRACK
+      def: "armed,1,1x"
+   1:
+      swtch: "SA0"
+      func: PLAY_TRACK
+      def: "disarm,1,!1x"
+   2:
+      swtch: "SB0"
+      func: PLAY_TRACK
+      def: "airmod,1,!1x"
+   3:
+      swtch: "SB1"
+      func: PLAY_TRACK
+      def: "acrmod,1,!1x"
+   4:
+      swtch: "SB2"
+      func: PLAY_TRACK
+      def: "angmod,1,!1x"
+   5:
+      swtch: "SC2"
+      func: PLAY_TRACK
+      def: "gpsres,1,!1x"
+   6:
+      swtch: "SE2"
+      func: OVERRIDE_CHANNEL
+      def: "5,150,1"
+   7:
+      swtch: "SE2"
+      func: OVERRIDE_CHANNEL
+      def: "2,40,1"
+   8:
+      swtch: "SE2"
+      func: PLAY_TRACK
+      def: "buzing,1,1x"
+   9:
+      swtch: "L1"
+      func: PLAY_TRACK
+      def: "lowlnd,1,!1x"
+   10:
+      swtch: "SC1"
+      func: PLAY_TRACK
+      def: "turtle,1,!1x"
+   11:
+      swtch: "SC0"
+      func: PLAY_TRACK
+      def: "norms,1,!1x"
+   12:
+      swtch: "SD2"
+      func: PLAY_TRACK
+      def: "launch,1,1x"
    0:
       swtch: "ON"
       func: VOLUME

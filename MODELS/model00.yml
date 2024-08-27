@@ -317,58 +317,6 @@ logicalSw:
       delay: 10
       duration: 0
 customFn: 
-   0:
-      swtch: "SA2"
-      func: PLAY_TRACK
-      def: "armed,1,1x"
-   1:
-      swtch: "SA0"
-      func: PLAY_TRACK
-      def: "disarm,1,!1x"
-   2:
-      swtch: "SB0"
-      func: PLAY_TRACK
-      def: "airmod,1,!1x"
-   3:
-      swtch: "SB1"
-      func: PLAY_TRACK
-      def: "acrmod,1,!1x"
-   4:
-      swtch: "SB2"
-      func: PLAY_TRACK
-      def: "angmod,1,!1x"
-   5:
-      swtch: "SC2"
-      func: PLAY_TRACK
-      def: "buzact,1,!1x"
-   6:
-      swtch: "SE2"
-      func: OVERRIDE_CHANNEL
-      def: "5,150,1"
-   7:
-      swtch: "SE2"
-      func: OVERRIDE_CHANNEL
-      def: "2,40,1"
-   8:
-      swtch: "SE2"
-      func: PLAY_TRACK
-      def: "panic,1,!1x"
-   9:
-      swtch: "L1"
-      func: PLAY_TRACK
-      def: "lowlnd,1,!1x"
-   10:
-      swtch: "SC1"
-      func: PLAY_TRACK
-      def: "turtle,1,!1x"
-   11:
-      swtch: "SC0"
-      func: PLAY_TRACK
-      def: "norms,1,!1x"
-   12:
-      swtch: "SD2"
-      func: PLAY_TRACK
-      def: "launch,1,1x"
 flightModeData: 
    0:
       trim: 
