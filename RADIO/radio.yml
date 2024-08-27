@@ -1,5 +1,5 @@
-checksum: 8520
-manuallyEdited: 1
+checksum: 43354
+manuallyEdited: 0
 timezoneMinutes: 0
 ppmunit: 0
 semver: 2.10.2
@@ -80,7 +80,7 @@ speakerVolume: 8
 vBatMin: 66
 vBatMax: 84
 backlightBright: 94
-globalTimer: 162687
+globalTimer: 162796
 bluetoothBaudrate: 0
 bluetoothMode: OFF
 countryCode: 0
@@ -101,9 +101,9 @@ varioRange: 0
 varioRepeat: 0
 customFn: 
    0:
-      swtch: "SA2"
-      func: PLAY_TRACK
-      def: "armed,1,1x"
+      swtch: "ON"
+      func: VOLUME
+      def: "I4,1"
    1:
       swtch: "SA0"
       func: PLAY_TRACK
@@ -126,12 +126,12 @@ customFn:
       def: "gpsres,1,!1x"
    6:
       swtch: "SE2"
-      func: OVERRIDE_CHANNEL
-      def: "5,150,1"
+      func: TRAINER
+      def: "chans,1"
    7:
       swtch: "SE2"
-      func: OVERRIDE_CHANNEL
-      def: "2,40,1"
+      func: TRAINER
+      def: "Ele,1"
    8:
       swtch: "SE2"
       func: PLAY_TRACK
@@ -147,15 +147,11 @@ customFn:
    11:
       swtch: "SC0"
       func: PLAY_TRACK
-      def: "norms,1,!1x"
+      def: "normod,1,!1x"
    12:
       swtch: "SD2"
       func: PLAY_TRACK
       def: "launch,1,1x"
-   0:
-      swtch: "ON"
-      func: VOLUME
-      def: "I4,1"
 serialPort: 
    VCP:
       mode: CLI

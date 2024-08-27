@@ -316,7 +316,6 @@ logicalSw:
       andsw: "SA2"
       delay: 10
       duration: 0
-customFn: 
 flightModeData: 
    0:
       trim: 
