@@ -20,7 +20,7 @@ from os.path import isfile
 
 def tts(msg: str, output_file: str) -> None:
     # piper is not deterministic, don't create big git changes
-    if isfile(filepath):
+    if isfile(output_file):
         return
 
     print(msg)
