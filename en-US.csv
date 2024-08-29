@@ -520,3 +520,5 @@
 "521","low battery, land now","low battery, land now","","","lowlnd.wav"
 "522","GPS rescue mode","GPS rescue mode","","","gpsres.wav"
 "523","Buzzing","Buzzing","","","buzing.wav"
+"524","Sport mode on","Sport mode on","","","spton.wav"
+"524","Sport mode off","Sport mode off","","","sptoff.wav"

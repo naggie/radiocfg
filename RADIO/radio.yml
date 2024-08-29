@@ -156,6 +156,14 @@ customFn:
       swtch: "SA2"
       func: PLAY_TRACK
       def: "armed,1,1x"
+   14:
+      swtch: "SD0"
+      func: PLAY_TRACK
+      def: "sptoff,1,1x"
+   15:
+      swtch: "SD2"
+      func: PLAY_TRACK
+      def: "spton,1,1x"
 serialPort: 
    VCP:
       mode: CLI
