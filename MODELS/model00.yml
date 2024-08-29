@@ -68,6 +68,38 @@ mixData:
    speedDown: 0
    name: ""
  -
+   weight: 15
+   destCh: 2
+   srcRaw: P1
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: MUL
+   speedPrec: 0
+   offset: 85
+   swtch: "SC0"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 15
+   destCh: 2
+   srcRaw: P1
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   speedPrec: 0
+   offset: -15
+   swtch: "SC0"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
    weight: 100
    destCh: 3
    srcRaw: I0
