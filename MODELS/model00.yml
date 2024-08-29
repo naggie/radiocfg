@@ -68,14 +68,14 @@ mixData:
    speedDown: 0
    name: ""
  -
-   weight: 15
+   weight: 10
    destCh: 2
    srcRaw: SD
    carryTrim: 0
    mixWarn: 0
    mltpx: MUL
    speedPrec: 0
-   offset: 85
+   offset: 90
    swtch: "SC0"
    flightModes: 000000000
    delayUp: 0
@@ -84,14 +84,14 @@ mixData:
    speedDown: 0
    name: ""
  -
-   weight: 15
+   weight: 10
    destCh: 2
    srcRaw: SD
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
    speedPrec: 0
-   offset: -15
+   offset: -10
    swtch: "SC0"
    flightModes: 000000000
    delayUp: 0
