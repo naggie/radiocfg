@@ -1,5 +1,5 @@
 checksum: 7897
-manuallyEdited: 0
+manuallyEdited: 1
 timezoneMinutes: 0
 ppmunit: 0
 semver: 2.10.2
@@ -111,11 +111,11 @@ customFn:
    2:
       swtch: "SB0"
       func: PLAY_TRACK
-      def: "airmod,1,!1x"
+      def: "acrmod,1,!1x"
    3:
       swtch: "SB1"
       func: PLAY_TRACK
-      def: "acrmod,1,!1x"
+      def: "airmod,1,!1x"
    4:
       swtch: "SB2"
       func: PLAY_TRACK
