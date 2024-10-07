@@ -9,5 +9,5 @@ return {
     },
     frequenciesPerBand = 8,
     bandTable = { [0]="U", "A", "B", "E", "F", "R", "6" },
-    powerTable = { [1]="25 ", [2]="PIT", [3]="100", [4]="200", [5]="400", },
+    powerTable = { [1]="25 ", [2]="PIT", [3]="100", [4]="200", [5]="350", },
 }

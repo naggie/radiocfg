@@ -48,7 +48,7 @@ vtxtable band 4 FATSHARK F FACTORY 5740 5760 5780 5800 5820 5840 5860 5880
 vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
 vtxtable powerlevels 5
 vtxtable powervalues 1 0 2 3 4
-vtxtable powerlabels 25 PIT 100 200 400
+vtxtable powerlabels 25 PIT 100 200 350
 
 # master
 set gyro_lpf1_static_hz = 150
