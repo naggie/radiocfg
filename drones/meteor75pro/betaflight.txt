@@ -21,6 +21,9 @@ signature
 # resources
 resource LED_STRIP 1 NONE
 resource SOFTSERIAL_TX 1 A08
+resource SOFTSERIAL_TX 2 NONE
+resource SOFTSERIAL_RX 1 NONE
+resource SOFTSERIAL_RX 2 NONE
 
 # feature
 feature -AIRMODE
@@ -32,7 +35,6 @@ feature OSD
 # serial
 serial 1 2 115200 57600 0 115200
 serial 30 2048 115200 19200 0 19200
-serial 31 0 115200 19200 0 19200
 
 # beacon
 beacon RX_LOST
