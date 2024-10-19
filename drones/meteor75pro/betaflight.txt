@@ -73,7 +73,6 @@ set min_check = 1000
 set max_check = 1810
 set blackbox_sample_rate = 1/2
 set dshot_bidir = ON
-set dshot_bitbang = ON
 set motor_poles = 12
 set failsafe_procedure = GPS-RESCUE
 set bat_capacity = 550
