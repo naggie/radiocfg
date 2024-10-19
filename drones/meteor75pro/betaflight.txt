@@ -117,6 +117,7 @@ set osd_sys_vtx_temp_pos = 69
 set osd_stat_bitmask = 12588
 set osd_canvas_height = 13
 set debug_mode = GYRO_SCALED
+set cpu_overclock = 120MHZ
 set vtx_band = 5
 set vtx_channel = 8
 set vtx_power = 5
