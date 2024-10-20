@@ -68,38 +68,6 @@ mixData:
    speedDown: 0
    name: ""
  -
-   weight: 10
-   destCh: 2
-   srcRaw: SD
-   carryTrim: 0
-   mixWarn: 0
-   mltpx: MUL
-   speedPrec: 0
-   offset: 90
-   swtch: "SC0"
-   flightModes: 000000000
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: ""
- -
-   weight: 10
-   destCh: 2
-   srcRaw: SD
-   carryTrim: 0
-   mixWarn: 0
-   mltpx: ADD
-   speedPrec: 0
-   offset: -10
-   swtch: "SC0"
-   flightModes: 000000000
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: ""
- -
    weight: 100
    destCh: 3
    srcRaw: I0
@@ -344,9 +312,9 @@ points:
 logicalSw: 
    0:
       func: FUNC_VNEG
-      def: "tele(10),33"
+      def: "tele(10),32"
       andsw: "SA2"
-      delay: 15
+      delay: 20
       duration: 0
 flightModeData: 
    0:
@@ -767,6 +735,99 @@ telemetrySensors:
       onlyPositive: 0
       cfg: 
          param: 0
+   18:
+      id1: 
+         id: 2
+      id2: 
+         instance: 0
+      label: "GPS"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 40
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         param: 0
+   19:
+      id1: 
+         id: 2
+      id2: 
+         instance: 2
+      label: "GSpd"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 7
+      prec: 1
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   20:
+      id1: 
+         id: 2
+      id2: 
+         instance: 3
+      label: "Hdg"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 20
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   21:
+      id1: 
+         id: 2
+      id2: 
+         instance: 4
+      label: "Alt"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 9
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   22:
+      id1: 
+         id: 2
+      id2: 
+         instance: 5
+      label: "Sats"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 0
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
 screens: 
    0:
       type: VALUES
@@ -775,7 +836,7 @@ screens:
             0:
                sources: 
                   0:
-                     val: tele(-10)
+                     val: tele(+19)
                   1:
                      val: tele(2)
             1:
@@ -789,11 +850,13 @@ screens:
                   0:
                      val: tele(10)
                   1:
-                     val: TX_GPS
+                     val: tele(22)
             3:
                sources: 
                   0:
                      val: tele(6)
+                  1:
+                     val: tele(21)
    1:
       type: BARS
       u: 
