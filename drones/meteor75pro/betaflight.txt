@@ -109,6 +109,7 @@ set osd_gps_sats_pos = 2098
 set osd_home_dir_pos = 2095
 set osd_home_dist_pos = 2135
 set osd_flight_dist_pos = 130
+set osd_altitude_pos = 18497
 set osd_warnings_pos = 2081
 set osd_avg_cell_voltage_pos = 44
 set osd_pit_ang_pos = 100
