@@ -19,22 +19,15 @@ signature
 # name: Meteor75 Pro
 
 # resources
-resource LED_STRIP 1 NONE
-resource SOFTSERIAL_TX 1 A08
+resource SOFTSERIAL_TX 1 NONE
 resource SOFTSERIAL_TX 2 NONE
 resource SOFTSERIAL_RX 1 NONE
 resource SOFTSERIAL_RX 2 NONE
 
 # feature
 feature -AIRMODE
-feature SOFTSERIAL
-feature GPS
 feature TELEMETRY
 feature OSD
-
-# serial
-serial 1 2 115200 57600 0 115200
-serial 30 2048 115200 19200 0 19200
 
 # beacon
 beacon RX_LOST
@@ -43,11 +36,10 @@ beacon RX_SET
 # aux
 aux 0 0 0 1700 2100 0 0
 aux 1 1 1 1700 2100 0 0
-aux 2 46 2 1700 2100 0 0
-aux 3 13 4 1500 2100 0 0
-aux 4 28 1 1300 1700 0 0
-aux 5 35 2 1300 1700 0 0
-aux 6 49 3 1500 2100 0 0
+aux 2 13 4 1500 2100 0 0
+aux 3 28 1 1300 1700 0 0
+aux 4 35 2 1300 1700 0 0
+aux 5 49 3 1500 2100 0 0
 
 # vtxtable
 vtxtable bands 6
@@ -73,8 +65,8 @@ set min_check = 1000
 set max_check = 1810
 set blackbox_sample_rate = 1/2
 set dshot_bidir = ON
+set dshot_bitbang = ON
 set motor_poles = 12
-set failsafe_procedure = GPS-RESCUE
 set bat_capacity = 550
 set vbat_max_cell_voltage = 435
 set vbat_min_cell_voltage = 310
@@ -104,12 +96,12 @@ set osd_throttle_pos = 2441
 set osd_vtx_channel_pos = 32
 set osd_crosshairs_pos = 2253
 set osd_craft_name_pos = 393
-set osd_gps_speed_pos = 2448
-set osd_gps_sats_pos = 2098
-set osd_home_dir_pos = 2095
-set osd_home_dist_pos = 2135
+set osd_gps_speed_pos = 400
+set osd_gps_sats_pos = 50
+set osd_home_dir_pos = 47
+set osd_home_dist_pos = 87
 set osd_flight_dist_pos = 130
-set osd_altitude_pos = 18497
+set osd_altitude_pos = 16449
 set osd_warnings_pos = 2081
 set osd_avg_cell_voltage_pos = 44
 set osd_pit_ang_pos = 100
