@@ -1,5 +1,5 @@
 checksum: 35047
-manuallyEdited: 0
+manuallyEdited: 1
 timezoneMinutes: 0
 ppmunit: 0
 semver: 2.10.2
@@ -100,55 +100,11 @@ varioPitch: 0
 varioRange: 0
 varioRepeat: 0
 customFn: 
-   0:
-      swtch: "ON"
-      func: VOLUME
-      def: "I4,1"
    1:
       swtch: "SA0"
       func: PLAY_TRACK
       def: "disarm,1,!1x"
    2:
-      swtch: "SB0"
-      func: PLAY_TRACK
-      def: "acrmod,1,!1x"
-   3:
-      swtch: "SB1"
-      func: PLAY_TRACK
-      def: "airmod,1,!1x"
-   4:
-      swtch: "SB2"
-      func: PLAY_TRACK
-      def: "angmod,1,!1x"
-   5:
-      swtch: "SC2"
-      func: PLAY_TRACK
-      def: "gpsres,1,!1x"
-   6:
-      swtch: "SE2"
-      func: TRAINER
-      def: "chans,1"
-   7:
-      swtch: "SE2"
-      func: TRAINER
-      def: "Ele,1"
-   8:
-      swtch: "SE2"
-      func: PLAY_TRACK
-      def: "buzing,1,1x"
-   9:
-      swtch: "L1"
-      func: PLAY_TRACK
-      def: "lowlnd,1,!1x"
-   10:
-      swtch: "SC1"
-      func: PLAY_TRACK
-      def: "turtle,1,!1x"
-   11:
-      swtch: "SC0"
-      func: PLAY_TRACK
-      def: "normod,1,!1x"
-   12:
       swtch: "SA2"
       func: PLAY_TRACK
       def: "armed,1,1x"
