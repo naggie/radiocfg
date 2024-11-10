@@ -180,3 +180,15 @@ modelLSDisabled: GLOBAL
 modelSFDisabled: GLOBAL
 modelCustomScriptsDisabled: GLOBAL
 modelTelemetryDisabled: GLOBAL
+customFn:
+   0:
+      swtch: "L1"
+      func: PLAY_TRACK
+      def: "simu,1,1x"
+logicalSw:
+   0:
+      func: FUNC_VPOS
+      def: "MAX,0"
+      andsw: "NONE"
+      delay: 0
+      duration: 0

@@ -316,6 +316,12 @@ logicalSw:
       andsw: "SA2"
       delay: 20
       duration: 0
+   1:
+      func: FUNC_VPOS
+      def: "MAX,0"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
 customFn: 
    0:
       swtch: "SC1"
@@ -361,6 +367,10 @@ customFn:
       swtch: "SC1"
       func: PLAY_TRACK
       def: "turtle,1,!1x"
+   11:
+      swtch: "L2"
+      func: PLAY_TRACK
+      def: "quad,1,1x"
 flightModeData: 
    0:
       trim: 
