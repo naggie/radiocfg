@@ -318,9 +318,9 @@ logicalSw:
       duration: 0
 customFn: 
    0:
-      swtch: "ON"
-      func: VOLUME
-      def: "I4,1"
+      swtch: "SC1"
+      func: PLAY_TRACK
+      def: "turtle,1,!1x"
    1:
       swtch: "SB0"
       func: PLAY_TRACK
