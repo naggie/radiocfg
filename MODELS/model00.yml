@@ -1,6 +1,9 @@
 semver: 2.10.2
 header: 
    name: "QUADCOPTER"
+   modelId: 
+      0:
+         val: 1
 telemetryProtocol: 0
 thrTrim: 0
 noGlobalFunctions: 0
@@ -421,7 +424,7 @@ rfAlarms:
    critical: 42
 thrTrimSw: 0
 potsWarnMode: WARN_OFF
-jitterFilter: OFF
+jitterFilter: GLOBAL
 moduleData: 
    0:
       type: TYPE_CROSSFIRE

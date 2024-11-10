@@ -1,6 +1,9 @@
 semver: 2.10.2
 header: 
    name: "SIMULATOR"
+   modelId: 
+      0:
+         val: 2
 telemetryProtocol: 0
 thrTrim: 0
 noGlobalFunctions: 0
@@ -23,7 +26,7 @@ mixData:
    weight: 100
    destCh: 0
    srcRaw: I0
-   carryTrim: 0
+   carryTrim: 1
    mixWarn: 0
    mltpx: ADD
    speedPrec: 0
@@ -39,7 +42,7 @@ mixData:
    weight: 100
    destCh: 1
    srcRaw: I1
-   carryTrim: 0
+   carryTrim: 1
    mixWarn: 0
    mltpx: ADD
    speedPrec: 0
@@ -55,7 +58,7 @@ mixData:
    weight: 100
    destCh: 2
    srcRaw: I2
-   carryTrim: 0
+   carryTrim: 1
    mixWarn: 0
    mltpx: ADD
    speedPrec: 0
@@ -71,7 +74,7 @@ mixData:
    weight: 100
    destCh: 3
    srcRaw: I3
-   carryTrim: 0
+   carryTrim: 1
    mixWarn: 0
    mltpx: ADD
    speedPrec: 0
@@ -140,6 +143,18 @@ expoData:
    curve: 
       type: 1
       value: 0
+logicalSw: 
+   0:
+      func: FUNC_VPOS
+      def: "MAX,0"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+customFn: 
+   0:
+      swtch: "L1"
+      func: PLAY_TRACK
+      def: "simu,1,1x"
 thrTraceSrc: Thr
 switchWarning: 
    SB:
@@ -155,6 +170,16 @@ rfAlarms:
 thrTrimSw: 0
 potsWarnMode: WARN_OFF
 jitterFilter: GLOBAL
+moduleData: 
+   0:
+      type: TYPE_CROSSFIRE
+      subType: 0
+      channelsStart: 0
+      channelsCount: 16
+      failsafeMode: NOT_SET
+      mod: 
+         crsf: 
+            telemetryBaudrate: 0
 inputNames: 
    0:
       val: "Ail"
@@ -180,15 +205,3 @@ modelLSDisabled: GLOBAL
 modelSFDisabled: GLOBAL
 modelCustomScriptsDisabled: GLOBAL
 modelTelemetryDisabled: GLOBAL
-customFn:
-   0:
-      swtch: "L1"
-      func: PLAY_TRACK
-      def: "simu,1,1x"
-logicalSw:
-   0:
-      func: FUNC_VPOS
-      def: "MAX,0"
-      andsw: "NONE"
-      delay: 0
-      duration: 0

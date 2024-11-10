@@ -1,5 +1,5 @@
-checksum: 52060
-manuallyEdited: 1
+checksum: 45624
+manuallyEdited: 0
 timezoneMinutes: 0
 ppmunit: 0
 semver: 2.10.2
@@ -25,7 +25,7 @@ calib:
       mid: 1092
       spanNeg: 466
       spanPos: 467
-currModel: 0
+currModel: 1
 contrast: 20
 vBatWarn: 68
 txVoltageCalibration: -7
@@ -53,7 +53,7 @@ trainer:
          srcChn: 0
          mode: REPL
          studWeight: 100
-view: 2
+view: 18
 fai: 0
 beepMode: mode_all
 alarmsFlash: 0
@@ -80,7 +80,7 @@ speakerVolume: 8
 vBatMin: 66
 vBatMax: 84
 backlightBright: 94
-globalTimer: 287828
+globalTimer: 290080
 bluetoothBaudrate: 0
 bluetoothMode: OFF
 countryCode: 0
