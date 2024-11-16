@@ -315,7 +315,7 @@ points:
 logicalSw: 
    0:
       func: FUNC_VNEG
-      def: "tele(10),32"
+      def: "tele(10),31"
       andsw: "SA2"
       delay: 20
       duration: 0
@@ -331,7 +331,7 @@ customFn:
       func: PLAY_TRACK
       def: "turtle,1,!1x"
    1:
-      swtch: "SB0"
+      swtch: "SB1"
       func: PLAY_TRACK
       def: "acrmod,1,!1x"
    2:
@@ -339,7 +339,7 @@ customFn:
       func: PLAY_TRACK
       def: "normod,1,!1x"
    3:
-      swtch: "SB1"
+      swtch: "SB0"
       func: PLAY_TRACK
       def: "airmod,1,!1x"
    4:
@@ -367,10 +367,6 @@ customFn:
       func: PLAY_TRACK
       def: "lowlnd,1,!1x"
    10:
-      swtch: "SC1"
-      func: PLAY_TRACK
-      def: "turtle,1,!1x"
-   11:
       swtch: "L2"
       func: PLAY_TRACK
       def: "quad,1,1x"
