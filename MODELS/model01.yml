@@ -102,6 +102,23 @@ mixData:
    speedUp: 0
    speedDown: 0
    name: ""
+ -
+   weight: 100
+   destCh: 8
+   srcRaw: SE
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   speedPrec: 0
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
 expoData: 
  -
    mode: 3
