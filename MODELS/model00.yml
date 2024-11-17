@@ -448,13 +448,13 @@ trainerData:
    pulsePol: 0
 inputNames: 
    0:
-      val: "Rud"
+      val: "Yaw"
    1:
-      val: "Ele"
+      val: "Pit"
    2:
       val: "Thr"
    3:
-      val: "Ail"
+      val: "Rol"
 potsWarnEnabled: 0
 telemetrySensors: 
    0:

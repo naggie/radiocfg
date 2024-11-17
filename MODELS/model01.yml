@@ -25,8 +25,8 @@ mixData:
  -
    weight: 100
    destCh: 0
-   srcRaw: I0
-   carryTrim: 1
+   srcRaw: I3
+   carryTrim: 0
    mixWarn: 0
    mltpx: ADD
    speedPrec: 0
@@ -42,7 +42,7 @@ mixData:
    weight: 100
    destCh: 1
    srcRaw: I1
-   carryTrim: 1
+   carryTrim: 0
    mixWarn: 0
    mltpx: ADD
    speedPrec: 0
@@ -58,7 +58,7 @@ mixData:
    weight: 100
    destCh: 2
    srcRaw: I2
-   carryTrim: 1
+   carryTrim: 0
    mixWarn: 0
    mltpx: ADD
    speedPrec: 0
@@ -73,8 +73,8 @@ mixData:
  -
    weight: 100
    destCh: 3
-   srcRaw: I3
-   carryTrim: 1
+   srcRaw: I0
+   carryTrim: 0
    mixWarn: 0
    mltpx: ADD
    speedPrec: 0
@@ -90,7 +90,7 @@ mixData:
    weight: 100
    destCh: 4
    srcRaw: SA
-   carryTrim: 1
+   carryTrim: 0
    mixWarn: 0
    mltpx: ADD
    speedPrec: 0
@@ -105,7 +105,39 @@ mixData:
  -
    weight: 100
    destCh: 5
-   srcRaw: SE
+   srcRaw: SB
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   speedPrec: 0
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 6
+   srcRaw: SC
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   speedPrec: 0
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 7
+   srcRaw: SD
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
@@ -122,6 +154,38 @@ mixData:
    weight: 100
    destCh: 8
    srcRaw: SE
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   speedPrec: 0
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 9
+   srcRaw: P1
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   speedPrec: 0
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 10
+   srcRaw: MIN
    carryTrim: 0
    mixWarn: 0
    mltpx: ADD
@@ -173,3 +237,12 @@ customFn:
     swtch: "L1"
     func: PLAY_TRACK
     def: "simu,1,1x"
+inputNames: 
+   0:
+      val: "Yaw"
+   1:
+      val: "Pit"
+   2:
+      val: "Thr"
+   3:
+      val: "Rol"
