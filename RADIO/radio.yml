@@ -1,4 +1,4 @@
-checksum: 38377
+checksum: 10197
 manuallyEdited: 1
 timezoneMinutes: 0
 ppmunit: 0
@@ -25,7 +25,7 @@ calib:
       mid: 1092
       spanNeg: 466
       spanPos: 467
-currModel: 1
+currModel: 0
 contrast: 20
 vBatWarn: 68
 txVoltageCalibration: -7
@@ -80,7 +80,7 @@ speakerVolume: 8
 vBatMin: 66
 vBatMax: 84
 backlightBright: 94
-globalTimer: 306642
+globalTimer: 307483
 bluetoothBaudrate: 0
 bluetoothMode: OFF
 countryCode: 0

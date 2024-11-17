@@ -10,7 +10,7 @@ noGlobalFunctions: 0
 displayTrims: 0
 ignoreSensorIds: 0
 trimInc: 0
-disableThrottleWarning: 0
+disableThrottleWarning: 1
 displayChecklist: 0
 extendedLimits: 0
 extendedTrims: 0
@@ -168,9 +168,8 @@ modelLSDisabled: GLOBAL
 modelSFDisabled: GLOBAL
 modelCustomScriptsDisabled: GLOBAL
 modelTelemetryDisabled: GLOBAL
-customFn:
-  customFn: 
-   0:
-      swtch: "L1"
-      func: PLAY_TRACK
-      def: "simu,1,1x"
+customFn: 
+ 0:
+    swtch: "L1"
+    func: PLAY_TRACK
+    def: "simu,1,1x"
