@@ -26,7 +26,7 @@ mixData:
    weight: 100
    destCh: 0
    srcRaw: I3
-   carryTrim: 0
+   carryTrim: 1
    mixWarn: 0
    mltpx: ADD
    speedPrec: 0
@@ -42,7 +42,7 @@ mixData:
    weight: 100
    destCh: 1
    srcRaw: I1
-   carryTrim: 0
+   carryTrim: 1
    mixWarn: 0
    mltpx: ADD
    speedPrec: 0
@@ -58,7 +58,7 @@ mixData:
    weight: 100
    destCh: 2
    srcRaw: I2
-   carryTrim: 0
+   carryTrim: 1
    mixWarn: 0
    mltpx: ADD
    speedPrec: 0
@@ -74,7 +74,7 @@ mixData:
    weight: 100
    destCh: 3
    srcRaw: I0
-   carryTrim: 0
+   carryTrim: 1
    mixWarn: 0
    mltpx: ADD
    speedPrec: 0
@@ -198,6 +198,26 @@ mixData:
    speedUp: 0
    speedDown: 0
    name: ""
+expoData: 
+ -
+   mode: 3
+   scale: 0
+   trimSource: 0
+   srcRaw: Ail
+   chn: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: "y C1"
+   offset: 0
+   curve: 
+      type: 1
+      value: 0
+customFn: 
+   0:
+      swtch: "L1"
+      func: PLAY_TRACK
+      def: "simu,1,1x"
 thrTraceSrc: Thr
 rssiSource: none
 rfAlarms: 
@@ -216,6 +236,15 @@ moduleData:
       mod: 
          crsf: 
             telemetryBaudrate: 0
+inputNames: 
+   0:
+      val: "Yaw"
+   1:
+      val: "Pit"
+   2:
+      val: "Thr"
+   3:
+      val: "Rol"
 potsWarnEnabled: 0
 view: 0
 modelRegistrationID: "naggie"
@@ -232,17 +261,3 @@ modelLSDisabled: GLOBAL
 modelSFDisabled: GLOBAL
 modelCustomScriptsDisabled: GLOBAL
 modelTelemetryDisabled: GLOBAL
-customFn: 
- 0:
-    swtch: "L1"
-    func: PLAY_TRACK
-    def: "simu,1,1x"
-inputNames: 
-   0:
-      val: "Yaw"
-   1:
-      val: "Pit"
-   2:
-      val: "Thr"
-   3:
-      val: "Rol"
