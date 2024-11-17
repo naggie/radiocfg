@@ -1,5 +1,5 @@
 checksum: 26758
-manuallyEdited: 0
+manuallyEdited: 1
 timezoneMinutes: 0
 ppmunit: 0
 semver: 2.10.2
@@ -99,15 +99,6 @@ backgroundVolume: 3
 varioPitch: 0
 varioRange: 0
 varioRepeat: 0
-customFn: 
-   1:
-      swtch: "SA0"
-      func: PLAY_TRACK
-      def: "disarm,1,!1x"
-   2:
-      swtch: "SA2"
-      func: PLAY_TRACK
-      def: "armed,1,1x"
 serialPort: 
    VCP:
       mode: CLI
