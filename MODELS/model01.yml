@@ -104,7 +104,7 @@ mixData:
    name: ""
  -
    weight: 100
-   destCh: 8
+   destCh: 5
    srcRaw: SE
    carryTrim: 0
    mixWarn: 0
@@ -119,83 +119,22 @@ mixData:
    speedDown: 0
    name: ""
  -
-expoData: 
- -
-   mode: 3
-   scale: 0
-   trimSource: 0
-   srcRaw: Ail
-   chn: 0
+   weight: 100
+   destCh: 8
+   srcRaw: SE
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   speedPrec: 0
+   offset: 0
    swtch: "NONE"
    flightModes: 000000000
-   weight: 100
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
    name: ""
-   offset: 0
-   curve: 
-      type: 1
-      value: 0
- -
-   mode: 3
-   scale: 0
-   trimSource: 0
-   srcRaw: Ele
-   chn: 1
-   swtch: "NONE"
-   flightModes: 000000000
-   weight: 100
-   name: ""
-   offset: 0
-   curve: 
-      type: 1
-      value: 0
- -
-   mode: 3
-   scale: 0
-   trimSource: 0
-   srcRaw: Thr
-   chn: 2
-   swtch: "NONE"
-   flightModes: 000000000
-   weight: 100
-   name: ""
-   offset: 0
-   curve: 
-      type: 1
-      value: 0
- -
-   mode: 3
-   scale: 0
-   trimSource: 0
-   srcRaw: Rud
-   chn: 3
-   swtch: "NONE"
-   flightModes: 000000000
-   weight: 100
-   name: ""
-   offset: 0
-   curve: 
-      type: 1
-      value: 0
-logicalSw: 
-   0:
-      func: FUNC_VPOS
-      def: "MAX,0"
-      andsw: "NONE"
-      delay: 0
-      duration: 0
-customFn: 
-   0:
-      swtch: "L1"
-      func: PLAY_TRACK
-      def: "simu,1,1x"
 thrTraceSrc: Thr
-switchWarning: 
-   SB:
-      pos: up
-   SC:
-      pos: up
-   SE:
-      pos: up
 rssiSource: none
 rfAlarms: 
    warning: 45
@@ -213,15 +152,6 @@ moduleData:
       mod: 
          crsf: 
             telemetryBaudrate: 0
-inputNames: 
-   0:
-      val: "Ail"
-   1:
-      val: "Ele"
-   2:
-      val: "Thr"
-   3:
-      val: "Rud"
 potsWarnEnabled: 0
 view: 0
 modelRegistrationID: "naggie"
@@ -238,3 +168,9 @@ modelLSDisabled: GLOBAL
 modelSFDisabled: GLOBAL
 modelCustomScriptsDisabled: GLOBAL
 modelTelemetryDisabled: GLOBAL
+customFn:
+  customFn: 
+   0:
+      swtch: "L1"
+      func: PLAY_TRACK
+      def: "simu,1,1x"
