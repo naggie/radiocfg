@@ -1,6 +1,6 @@
 semver: 2.10.2
 header: 
-   name: "QUADCOPTER"
+   name: "Meteor 75 Pro"
    modelId: 
       0:
          val: 1
@@ -369,7 +369,7 @@ customFn:
    10:
       swtch: "L2"
       func: PLAY_TRACK
-      def: "quad,1,1x"
+      def: "mete,1,1x"
    11:
       swtch: "SA0"
       func: PLAY_TRACK
