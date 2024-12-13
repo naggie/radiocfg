@@ -1,16 +1,16 @@
 semver: 2.10.2
 header: 
-   name: "Meteor 75 "
+   name: "SIMULATOR"
    modelId: 
       0:
-         val: 1
+         val: 2
 telemetryProtocol: 0
 thrTrim: 0
 noGlobalFunctions: 0
 displayTrims: 0
 ignoreSensorIds: 0
 trimInc: 0
-disableThrottleWarning: 0
+disableThrottleWarning: 1
 displayChecklist: 0
 extendedLimits: 1
 extendedTrims: 0
@@ -313,12 +313,6 @@ points:
    160:
       val: 1
 logicalSw: 
-   0:
-      func: FUNC_VNEG
-      def: "tele(10),31"
-      andsw: "SA2"
-      delay: 20
-      duration: 0
    1:
       func: FUNC_VPOS
       def: "MAX,0"
@@ -327,57 +321,9 @@ logicalSw:
       duration: 0
 customFn: 
    0:
-      swtch: "SC1"
-      func: PLAY_TRACK
-      def: "turtle,1,!1x"
-   1:
-      swtch: "SB1"
-      func: PLAY_TRACK
-      def: "acrmod,1,!1x"
-   2:
-      swtch: "SC0"
-      func: PLAY_TRACK
-      def: "normod,1,!1x"
-   3:
-      swtch: "SB0"
-      func: PLAY_TRACK
-      def: "airmod,1,!1x"
-   4:
-      swtch: "SB2"
-      func: PLAY_TRACK
-      def: "angmod,1,!1x"
-   5:
-      swtch: "SC2"
-      func: PLAY_TRACK
-      def: "gpsres,1,!1x"
-   6:
-      swtch: "SE2"
-      func: TRAINER
-      def: "chans,1"
-   7:
-      swtch: "SE2"
-      func: TRAINER
-      def: "Ele,1"
-   8:
-      swtch: "SE2"
-      func: PLAY_TRACK
-      def: "buzing,1,1x"
-   9:
-      swtch: "L1"
-      func: PLAY_TRACK
-      def: "lowlnd,1,!1x"
-   10:
       swtch: "L2"
       func: PLAY_TRACK
-      def: "mete,1,1x"
-   11:
-      swtch: "SA0"
-      func: PLAY_TRACK
-      def: "disarm,1,!1x"
-   12:
-      swtch: "SA2"
-      func: PLAY_TRACK
-      def: "armed,1,1x"
+      def: "simu,1,1x"
 flightModeData: 
    0:
       trim: 
@@ -417,11 +363,6 @@ flightModeData:
          8:
             val: 0
 thrTraceSrc: Thr
-switchWarning: 
-   SB:
-      pos: up
-   SC:
-      pos: up
 rssiSource: none
 rfAlarms: 
    warning: 45
