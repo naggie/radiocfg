@@ -1,6 +1,5 @@
 defaults nosave
 
-# diff all
 
 # version
 # Betaflight / STM32F411 (S411) 4.5.1 Jul 27 2024 / 03:31:57 (77d01ba3b) MSP API: 1.46
@@ -119,10 +118,10 @@ set osd_stat_bitmask = 12588
 set osd_canvas_height = 13
 set debug_mode = GYRO_SCALED
 set vtx_band = 5
-set vtx_channel = 1
+set vtx_channel = 2
 set vtx_power = 5
 set vtx_low_power_disarm = ON
-set vtx_freq = 5658
+set vtx_freq = 5695
 set vcd_video_system = NTSC
 set gyro_1_sensor_align = CW90
 set gyro_1_align_yaw = 900
