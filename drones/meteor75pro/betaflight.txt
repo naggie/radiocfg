@@ -1,5 +1,6 @@
 defaults nosave
 
+# diff all
 
 # version
 # Betaflight / STM32F411 (S411) 4.5.1 Jul 27 2024 / 03:31:57 (77d01ba3b) MSP API: 1.46
@@ -28,6 +29,9 @@ resource SOFTSERIAL_RX 2 NONE
 feature -AIRMODE
 feature TELEMETRY
 feature OSD
+
+# serial
+serial 1 2048 115200 57600 0 115200
 
 # beacon
 beacon RX_LOST
