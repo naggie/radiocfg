@@ -369,7 +369,7 @@ customFn:
    10:
       swtch: "L2"
       func: PLAY_TRACK
-      def: "mete,1,1x"
+      def: "luna,1,1x"
    11:
       swtch: "SA0"
       func: PLAY_TRACK
@@ -430,15 +430,21 @@ thrTrimSw: 0
 potsWarnMode: WARN_OFF
 jitterFilter: GLOBAL
 moduleData: 
-   0:
-      type: TYPE_CROSSFIRE
-      subType: 0
+   1:
+      type: TYPE_MULTIMODULE
+      subType: 6,4
       channelsStart: 0
       channelsCount: 16
       failsafeMode: NOT_SET
       mod: 
-         crsf: 
-            telemetryBaudrate: 0
+         multi: 
+            disableTelemetry: 0
+            disableMapping: 0
+            autoBindMode: 1
+            lowPowerMode: 0
+            receiverTelemetryOff: 0
+            receiverHigherChannels: 0
+            optionValue: 0
 trainerData: 
    mode: SLAVE
    channelsStart: 0
