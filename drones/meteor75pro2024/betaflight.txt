@@ -1,5 +1,6 @@
 defaults nosave
 
+# diff all
 
 # version
 # Betaflight / STM32G47X (SG47) 4.5.0 May 16 2024 / 01:17:04 (c155f5830) MSP API: 1.46
@@ -20,8 +21,12 @@ signature
 
 # feature
 feature -AIRMODE
+feature GPS
 feature TELEMETRY
 feature OSD
+
+# serial
+serial 0 2 115200 57600 0 115200
 
 # beacon
 beacon RX_LOST
@@ -70,6 +75,8 @@ set vbat_warning_cell_voltage = 345
 set ibata_offset = -600
 set yaw_motors_reversed = ON
 set small_angle = 180
+set gps_sbas_mode = AUTO
+set gps_ublox_use_galileo = ON
 set pid_process_denom = 2
 set simplified_gyro_filter_multiplier = 110
 set osd_rssi_dbm_alarm = -99
@@ -87,7 +94,10 @@ set osd_crosshairs_pos = 2253
 set osd_current_pos = 2400
 set osd_mah_drawn_pos = 2434
 set osd_craft_name_pos = 2441
-set osd_home_dist_pos = 98
+set osd_gps_speed_pos = 2099
+set osd_gps_sats_pos = 2094
+set osd_home_dir_pos = 2091
+set osd_home_dist_pos = 2104
 set osd_flight_dist_pos = 130
 set osd_warnings_pos = 2378
 set osd_avg_cell_voltage_pos = 44
