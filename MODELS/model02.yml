@@ -392,9 +392,9 @@ jitterFilter: GLOBAL
 moduleData: 
    1:
       type: TYPE_MULTIMODULE
-      subType: 6,4
+      subType: 6,3
       channelsStart: 0
-      channelsCount: 16
+      channelsCount: 12
       failsafeMode: NOT_SET
       mod: 
          multi: 
@@ -425,13 +425,13 @@ potsWarnEnabled: 0
 telemetrySensors: 
    0:
       id1: 
-         id: 20
+         id: 61440
       id2: 
          instance: 0
-      label: "1RSS"
+      label: "TRSS"
       subId: 0
       type: TYPE_CUSTOM
-      unit: 17
+      unit: 0
       prec: 0
       autoOffset: 0
       filter: 0
@@ -444,14 +444,14 @@ telemetrySensors:
             offset: 0
    1:
       id1: 
-         id: 20
+         id: 2560
       id2: 
-         instance: 1
-      label: "2RSS"
+         instance: 0
+      label: "RB1V"
       subId: 0
       type: TYPE_CUSTOM
-      unit: 17
-      prec: 0
+      unit: 1
+      prec: 2
       autoOffset: 0
       filter: 0
       logs: 1
@@ -463,13 +463,13 @@ telemetrySensors:
             offset: 0
    2:
       id1: 
-         id: 20
+         id: 2564
       id2: 
-         instance: 2
-      label: "RQly"
+         instance: 0
+      label: "RB1C"
       subId: 0
       type: TYPE_CUSTOM
-      unit: 13
+      unit: 14
       prec: 0
       autoOffset: 0
       filter: 0
@@ -482,13 +482,13 @@ telemetrySensors:
             offset: 0
    3:
       id1: 
-         id: 20
+         id: 32512
       id2: 
-         instance: 3
-      label: "RSNR"
+         instance: 0
+      label: "FdeA"
       subId: 0
       type: TYPE_CUSTOM
-      unit: 17
+      unit: 0
       prec: 0
       autoOffset: 0
       filter: 0
@@ -501,10 +501,10 @@ telemetrySensors:
             offset: 0
    4:
       id1: 
-         id: 20
+         id: 32514
       id2: 
-         instance: 4
-      label: "ANT"
+         instance: 0
+      label: "FdeB"
       subId: 0
       type: TYPE_CUSTOM
       unit: 0
@@ -520,10 +520,10 @@ telemetrySensors:
             offset: 0
    5:
       id1: 
-         id: 20
+         id: 32516
       id2: 
-         instance: 5
-      label: "RFMD"
+         instance: 0
+      label: "FdeL"
       subId: 0
       type: TYPE_CUSTOM
       unit: 0
@@ -539,13 +539,13 @@ telemetrySensors:
             offset: 0
    6:
       id1: 
-         id: 20
+         id: 32518
       id2: 
-         instance: 6
-      label: "TPWR"
+         instance: 0
+      label: "FdeR"
       subId: 0
       type: TYPE_CUSTOM
-      unit: 16
+      unit: 0
       prec: 0
       autoOffset: 0
       filter: 0
@@ -558,13 +558,13 @@ telemetrySensors:
             offset: 0
    7:
       id1: 
-         id: 20
+         id: 32520
       id2: 
-         instance: 7
-      label: "TRSS"
+         instance: 0
+      label: "FLss"
       subId: 0
       type: TYPE_CUSTOM
-      unit: 17
+      unit: 0
       prec: 0
       autoOffset: 0
       filter: 0
@@ -577,13 +577,13 @@ telemetrySensors:
             offset: 0
    8:
       id1: 
-         id: 20
+         id: 32522
       id2: 
-         instance: 8
-      label: "TQly"
+         instance: 0
+      label: "Hold"
       subId: 0
       type: TYPE_CUSTOM
-      unit: 13
+      unit: 0
       prec: 0
       autoOffset: 0
       filter: 0
@@ -596,14 +596,14 @@ telemetrySensors:
             offset: 0
    9:
       id1: 
-         id: 20
+         id: 32524
       id2: 
-         instance: 9
-      label: "TSNR"
+         instance: 0
+      label: "A2"
       subId: 0
       type: TYPE_CUSTOM
-      unit: 17
-      prec: 0
+      unit: 1
+      prec: 2
       autoOffset: 0
       filter: 0
       logs: 1
@@ -615,14 +615,14 @@ telemetrySensors:
             offset: 0
    10:
       id1: 
-         id: 8
+         id: 32258
       id2: 
          instance: 0
-      label: "RxBt"
+      label: "A3"
       subId: 0
       type: TYPE_CUSTOM
       unit: 1
-      prec: 1
+      prec: 2
       autoOffset: 0
       filter: 0
       logs: 1
@@ -634,14 +634,14 @@ telemetrySensors:
             offset: 0
    11:
       id1: 
-         id: 8
+         id: 32260
       id2: 
-         instance: 1
-      label: "Curr"
+         instance: 0
+      label: "Tmp2"
       subId: 0
       type: TYPE_CUSTOM
-      unit: 2
-      prec: 1
+      unit: 11
+      prec: 0
       autoOffset: 0
       filter: 0
       logs: 1
@@ -653,200 +653,14 @@ telemetrySensors:
             offset: 0
    12:
       id1: 
-         id: 8
-      id2: 
-         instance: 2
-      label: "Capa"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 14
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   13:
-      id1: 
-         id: 8
-      id2: 
-         instance: 3
-      label: "Bat"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 13
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   14:
-      id1: 
-         id: 30
+         id: 768
       id2: 
          instance: 0
-      label: "Ptch"
+      label: "Curr"
       subId: 0
       type: TYPE_CUSTOM
-      unit: 21
-      prec: 2
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   15:
-      id1: 
-         id: 30
-      id2: 
-         instance: 1
-      label: "Roll"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 21
-      prec: 2
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   16:
-      id1: 
-         id: 30
-      id2: 
-         instance: 2
-      label: "Yaw"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 21
-      prec: 2
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   17:
-      id1: 
-         id: 33
-      id2: 
-         instance: 0
-      label: "FM"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 42
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         param: 0
-   18:
-      id1: 
-         id: 2
-      id2: 
-         instance: 0
-      label: "GPS"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 40
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         param: 0
-   19:
-      id1: 
-         id: 2
-      id2: 
-         instance: 2
-      label: "GSpd"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 7
+      unit: 2
       prec: 1
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   20:
-      id1: 
-         id: 2
-      id2: 
-         instance: 3
-      label: "Hdg"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 20
-      prec: 2
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   21:
-      id1: 
-         id: 2
-      id2: 
-         instance: 4
-      label: "Alt"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 9
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   22:
-      id1: 
-         id: 2
-      id2: 
-         instance: 5
-      label: "Sats"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 0
-      prec: 0
       autoOffset: 0
       filter: 0
       logs: 1
