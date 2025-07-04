@@ -31,7 +31,8 @@ def tts(msg: str, output_file: str) -> None:
         f.close()
 
         run(
-            ["piper", "-m", "en_US-amy-medium.onnx", "--output_file", tmp],
+            ["piper", "-m", "pirated-nina.onnx", "--output_file", tmp],
+            #["piper", "-m", "en_US-amy-medium.onnx", "--output_file", tmp],
             input=msg.encode(),
             check=True,
             stdout=DEVNULL,
