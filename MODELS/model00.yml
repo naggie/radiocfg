@@ -385,7 +385,7 @@ customFn:
    14:
       swtch: "SD0"
       func: PLAY_TRACK
-      def: "poshof,1,1x"
+      def: "poshof,1,!1x"
 flightModeData: 
    0:
       trim: 
