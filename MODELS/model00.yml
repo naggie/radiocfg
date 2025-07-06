@@ -378,6 +378,14 @@ customFn:
       swtch: "SA2"
       func: PLAY_TRACK
       def: "armed,1,1x"
+   13:
+      swtch: "SD2"
+      func: PLAY_TRACK
+      def: "poshon,1,1x"
+   14:
+      swtch: "SD0"
+      func: PLAY_TRACK
+      def: "poshof,1,1x"
 flightModeData: 
    0:
       trim: 
